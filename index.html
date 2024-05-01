@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML OVERALL</title>
+</head>
+
+<body>
+  <!--    TABELA LATERAL   -->
+  <div class="sidenav">
+    <h2>Menu</h2>
+
+    <a href="#1">Basico</a>
+    <a href="#2">Elementos</a>
+    <a href="#3">Atributos</a>
+    <a href="#4">Cabeçalho</a>
+    <a href="#5">Paragrafo</a>
+    <a href="#6">Estilos</a>
+    <a href="#7">Formatação</a>
+    <a href="#8">Citações</a>
+    <a href="#9">Comentários</a>
+    <a href="#10">Cores</a>
+    <a href="#11">Links</a>
+    <a href="#12">Favicon</a>
+    <a href="#13">Tabelas</a>
+    <a href="#14">Lista</a>
+    <a href="#15">Block & line</a>
+    <a href="#16">Divisão</a>
+    <a href="#17">Classe</a>
+    <a href="#18">Id</a>
+    <a href="#19">Iframes</a>
+    <a href="#20">JavaScript</a>
+    <a href="#21">Semântica</a>
+    <a href="#22">Guia Style</a>
+    <a href="#23">Entidades</a>
+    <a href="#24">Simbolos</a>
+    <a href="#25">Emojis</a>
+    <a href="#26"></a>
+    <a href="#27"></a>
+    <a href="#28"></a>
+    <a href="#29">Formulários</a>
+    <a href="#30">Atributos do formulário</a>
+    <a href="#31">Elementos de formulário</a>
+    <a href="#32"></a>
+    <a href="#33"></a>
+    <a href="#34"></a>
+    <a href="#35">Canvas</a>
+    <a href="#36">SVG</a>
+    <a href="#37">Media</a>
+    <a href="#38">Video</a>
+    <a href="#39">Audio</a>
+    <a href="#40">Arrastar/soltar</a>
+    
+   
+  </div>
+
+  <!--  CONTEUDO   -->
+  
+  <div class="content" id="content">
+    <iframe src="" name="content" frameborder="0" width="100%" height="100%"></iframe>
+  </div>
+  
+  <div class="container">
+    <div class="basic" id="1">
+      <h1>Exemplos básicos de HTML</h1>
+      <p>Neste capítulo mostraremos alguns exemplos básicos de HTML.
+        Não se preocupe se usarmos tags que você ainda não conhece.</p>
+      <hr>
+      <h2>Documentos HTML</h2>
+      <p>Todos os documentos HTML devem começar com uma declaração de tipo de documento: &lt;!DOCTYPE html&gt;.
+        O próprio documento HTML começa &lt;html&gt; e termina com &lt;/html&gt;.
+        A parte visível do documento HTML está entre &lt;body&gt; e &lt;/body&gt;.</p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &lt;body&gt;<br>
+          <br>
+          &lt;h1&gt;My First Heading&lt;h1&gt;<br>
+          &lt;p&gt;My first paragraph.&lt;p&gt;<br>
+          <br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </p>
+      </div>
+      <h2>A declaração &lt;!DOCTYPE&gt;</h2>
+      <p>A &lt;!DOCTYPE&gt; declaração representa o tipo de documento e ajuda os navegadores a exibir as páginas da web
+        corretamente.
+        Deve aparecer apenas uma vez, no topo da página (antes de qualquer tag HTML).
+        A &lt;!DOCTYPE&gt; declaração não diferencia maiúsculas de minúsculas.
+        A &lt;!DOCTYPE&gt; declaração para HTML5 é:</p>
+      <div class="exe">&lt;!DOCTYPE html&gt;</div>
+      <h2>Cabeçalhos HTML</h2>
+      <p>Os títulos HTML são definidos com as tags &lt;h1&gt; to &lt;h6&gt;. <br>
+        &lt;h1&gt; define o título mais importante. &lt;h6&gt; define o título menos importante:</p>
+
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;h1>This is heading 1&lt;/h1> <br>
+          &lt;h2>This is heading 2&lt;/h2> <br>
+          &lt;h3>This is heading 3&lt;/h3>
+        </p>
+      </div>
+      <h2>Parágrafos HTML</h2>
+      <p>Os parágrafos HTML são definidos com a &lt;p&gt; tag:</p>
+      <h2>Links HTML</h2>
+      <p>Links HTML são definidos com a &lt;a&gt; tag:
+        O destino do link é especificado no href atributo.
+        Os atributos são usados para fornecer informações adicionais sobre os elementos HTML.
+        Você aprenderá mais sobre atributos em um capítulo posterior.</p>
+      <hr>
+      <h2>Imagens HTML</h2>
+      <p>As imagens HTML são definidas com a &lt;img&gt; tag.
+        O arquivo de origem (src), o texto alternativo (alt), width e height são fornecidos como atributos:</p>
+      <h2>Como visualizar a fonte HTML</h2>
+      <p>Você já viu uma página da Web e se perguntou “Ei! Como eles fizeram isso?”<br>
+        Ver código-fonte HTML:<br>
+        Clique CTRL + U em uma página HTML ou clique com o botão direito na página e selecione “Exibir código-fonte da
+        página”. Isso abrirá uma nova aba contendo o código-fonte HTML da página.<br>
+        Inspecione um elemento HTML:<br>
+        Clique com o botão direito em um elemento (ou em uma área em branco) e escolha "Inspecionar" para ver de que
+        elementos são compostos (você verá o HTML e o CSS). Você também pode editar o HTML ou CSS dinamicamente no
+        painel
+        Elementos ou Estilos que é aberto.</p>
+    </div>
+
+    <hr>
+
+    <div class="Elements" id="2">
+      <h1>Elementos</h1>
+      <p>Um elemento HTML é definido por uma tag inicial, algum conteúdo e uma tag final.</p>
+      <hr>
+      <h2>Elementos HTML</h2>
+      <p>O elemento HTML é tudo, desde a tag inicial até a tag final: <br>
+        &lt;tagname> O conteúdo vai aqui... &lt;/tagname> <br>
+        Exemplos dealguns elementos HTML: <br>
+        &lt;h1> Meu primeiro título &lt;/h1> <br>
+        &lt;p> Meu primeiro parágrafo.&lt;/p> <br>
+      </p>
+      <h2>Elementos HTML animados</h2>
+      <p>
+        Os elementos HTML podem ser animados (isso significa que os elementospodem conter outros elementos). <br>
+        Todos os documentos HTML consistem em elementos HTML animados. <br>
+        O exemplo a seguir contém quatro elementos HTML (,&lt;html> e ) :&lt;body> &lt;h1> &lt;p> <br>
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &lt;body&gt;<br>
+          <br>
+          &lt;h1&gt;My First Heading&lt;h1&gt;<br>
+          &lt;p&gt;My first paragraph.&lt;p&gt;<br>
+          <br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </p>
+      </div>
+      <h2>Ecemplo explicado</h2>
+      <p>O &lt;html> elemento é o elemento raiz e define todo o documento HTML. <br>
+        Possui uma tag inicial &lt;html> e uma tag final &lt;/html>. <br>
+        então, dentro do &lt;html> elemento existe um &lt;body> elemento:
+      </p>
+      <div class="exe">
+        &lt;body&gt;<br>
+        <br>
+        &lt;h1&gt;My First Heading&lt;h1&gt;<br>
+        &lt;p&gt;My first paragraph.&lt;p&gt;<br>
+        <br>
+        &lt;/body>
+      </div>
+      <p>
+        O &lt;body>elemento define o corpo do documento. <br>
+        Possui uma tag inicial &lt;body>e uma tag final &lt;/body>. <br>
+        Então, dentro do &lt;body>elemento existem outros dois elementos: &lt;h1>e &lt;p>: <br>
+      </p>
+      <div class="exe">
+        &lt;h1>My First Heading&lt;/h1> <br>
+        &lt;p>My first paragraph.&lt;/p>
+      </div>
+      <p>O &lt;h1> elemento define um título. <br>
+        Possui uma tag inicial &lt;h1> e uma tag final &lt;/h1>:
+      </p>
+      <div class="exe">
+        &lt;h1>My first Heading.&lt;/h1>
+      </div>
+      <p>O &lt;p> elemento define um parágrafo. <br>
+        Possui uma tag inicial &lt;p> e uma tag final &lt;/p>:
+      </p>
+      <div class="exe">
+        &lt;p> My first paragraph.&lt;/p>
+      </div>
+      <h2>Nunca pule a tag final</h2>
+      <p>Alguns elementos HTML serão exibidos corretamente, mesmo se você esquecer a tag final: <br></p>
+
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p> &lt;html&gt;<br>
+          &lt;body&gt;<br>
+          <br>
+          &lt;p&gt;This is a paragraph.&lt;p&gt;<br>
+          &lt;p&gt;This is a paragraph.&lt;p&gt;<br>
+          <br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </p>
+      </div>
+      <p><b>No entanto, nunca confie nisso! Resultados inesperados e erros podem ocorrer se você esquecer a tag
+          final!</b></p>
+      <hr>
+      <h2>Elementos HTML vazios</h2>
+      <p>Elementos HTML sem conteúdo são chamados de elementos vazios.
+
+        A &lt;br>tag define uma quebra de linha e é um elemento vazio sem tag de fechamento:
+      </p>
+
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p> &lt;p>This is a &lt;br> paragraph with a line break.&lt;/p></p>
+      </div>
+      <h2>HTML não diferencia maiúsculas de minúsculas</h2>
+      <p>As tags HTML não diferenciam maiúsculas de minúsculas: &lt;P>significa o mesmo que &lt;p>
+      <div class="br"></div>
+      <br>
+      O padrão HTML não exige tags em minúsculas.</p>
+    </div>
+
+    <hr>
+
+    <div class="Attributes" id="3">
+      <h1>Atributos HTML</h1>
+      <p>Os atributos HTML fornecem informações adicionais sobre os elementos HTML.</p>
+      <hr>
+      <h2>Atributos HTML</h2>
+      <p>
+        <li>Todos os elementos HTML podem ter atributos</li>
+        <li>Os atributos fornecem informações adicionais sobre os elementos</li>
+        <li>Os atributos são sempre especificados na tag inicial</li>
+        <li>Os atributos geralmente vêm em pares nome/valor como: nome="valor"</li>
+      </p>
+      <hr>
+      <h2>O atributo href</h2>
+      <p>A &lt;a> define um hiperlink. O <b>href</b> fatributo especifica o URL da página para a qual o link leva:</p>
+
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p> &lt;a href="https://www.w3schools.com">Visit W3Schools&lt;/a></p>
+      </div>
+      <p>Você pode aprender mais sobre links no <a href="https://www.w3schools.com/html/html_links.asp">capítulo Links
+          HTML</a> da W3Schools.</p>
+      <h2>O atributo src</h2>
+      <p>A &lt;img>tag é usada para incorporar uma imagem em uma página HTML. O srcatributo especifica o caminho para a
+        imagem a ser exibida:</p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>&lt;img src="img_girl.jpg"></p>
+      </div>
+      <h2>Os atributos de largura e altura</h2>
+      <p>A &lt;img>tag também deve conter os atributos width e height, que especificam a largura e a altura da imagem
+        (em pixels):</p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>&lt;img src="img_girl.jpg" width="500" height="600"></p>
+      </div>
+      <h2>O atributo alternativo</h2>
+      <p>altO atributo obrigatório para a &lt;img> tag especifica um texto alternativo para uma imagem, se a imagem por
+        algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, a um erro no srcatributo ou ao
+        usuário usar um leitor de tela.</p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>&lt;img src="img_girl.jpg" alt="Girl with a jacket"></p>
+      </div>
+      <h2>O atributo de estilo</h2>
+      <p>O styleatributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>&lt;p style="color:red;">This is a red paragraph.</p>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="Headings" id="4">
+      <h1>Cabeçalhos</h1>
+      <p>Cabeçalhos HTML são elementos fundamentais para organizar e destacar títulos ou legendas em uma página da web,
+        utilizando as tags de &lt;h1> a &lt;h6>. A tag &lt;h1> é usada para o título mais significativo, enquanto
+        &lt;h6> é para o menos importante, seguindo uma hierarquia que ajuda tanto na estruturação do conteúdo quanto na
+        indexação por mecanismos de busca. Essa hierarquia também facilita a navegação dos usuários, que muitas vezes
+        escaneiam a página pelos títulos. Além disso, o tamanho dos cabeçalhos pode ser personalizado com CSS,
+        especificamente através do atributo style utilizando a propriedade font-size, permitindo ajustes visuais
+        conforme necessário para adequar a apresentação ao design da página.</p>
+      <div class="exe">
+        <h3>Exemplo de codigo:</h3>
+        <p>
+          &lt;h1>Heading 1&lt;/h1> <br>
+          &lt;h2>Heading 2&lt;/h2> <br>
+          &lt;h3>Heading 3&lt;/h3> <br>
+          &lt;h4>Heading 4&lt;/h4> <br>
+          &lt;h5>Heading 5&lt;/h5> <br>
+          &lt;h6>Heading 6&lt;/h6>
+        </p>
+      </div>
+
+      <h2>Exemplo prático:</h2>
+      <p><b>Esta sendo usado em todo o site</b></p>
+    </div>
+
+    <hr>
+
+    <div class="Paragraphs" id="5">
+      <h1>Parágrafos HTML</h1>
+      <p>
+        Parágrafos em HTML são definidos pela tag &lt;p>, começam sempre em uma nova linha e são separados por margens
+        automáticas adicionadas pelo navegador, que também ignora espaços e linhas extras dentro do elemento. Telas de
+        diferentes tamanhos e janelas redimensionadas podem alterar a exibição do HTML, mas não é possível controlar
+        isso apenas adicionando espaços ou linhas no código HTML. <br>
+        A tag &lt;hr> é utilizada para inserir uma linha horizontal na página, funcionando como uma separação temática
+        entre conteúdos. Ela é uma tag vazia, ou seja, não requer uma tag de fechamento. <br>
+        Para quebras de linha específicas sem iniciar um novo parágrafo, usa-se a tag &lt;br>, outra tag vazia do
+        HTML.
+        <br>
+        Quando é necessário manter a formatação original do texto, como em poesias ou códigos, o elemento &lt;pre> é
+        apropriado, pois preserva espaços e quebras de linha e geralmente apresenta o texto em uma fonte de largura
+        fixa, mantendo a disposição visual pretendida pelo autor.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;h1>Isso é o cabeçalho 1&lt;/h1> <br>
+          &lt;p>Isso é um paragrafo.&lt;/p> <br>
+          &lt;hr> <br>
+          &lt;h2>Isso é o cabeçalho 2&lt;/h2> <br>
+          &lt;p>Isso é outro paragrafo.&lt;/p> <br>
+          &lt;hr>
+        </p>
+      </div>
+
+      <h2>Exemplo prático</h2>
+      <div class="box">
+        <h1>anteteguimon</h1>
+        <p>paralelogramo</p>
+        <br>
+        <hr>
+        <pre>o    rato roeu
+             a   roupa do 
+            rei de 
+            roma
+          </pre>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="Styles" id="6">
+      <h1>Estilos HTML</h1>
+      <p>
+        O atributo style em HTML é usado para aplicar estilos diretamente a elementos individuais, permitindo ajustes
+        como cor, tamanho da fonte, família da fonte, alinhamento do texto e cor de fundo. A sintaxe envolve
+        style="property:value;", com "property" sendo uma propriedade CSS e "value" o valor correspondente a essa
+        propriedade.<br>
+
+        Este atributo permite alterações rápidas e específicas na apresentação dos elementos da página, como modificar
+        cores de fundo e de texto, escolher a família da fonte, ajustar o tamanho do texto, e definir o alinhamento do
+        texto dentro dos elementos. É uma forma eficaz e imediata de controlar a estética de componentes específicos
+        em
+        uma página web.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        &lt;h1 style="color:blue;">This is a heading&lt;/h1> <br>
+        &lt;p style="color:red;">This is a paragraph.&lt;/p> <br>
+        &lt;h1 style="font-family:verdana;">This is a heading&lt;/h1> <br>
+        &lt;p style="font-family:courier;">This is a paragraph.&lt;/p> <br>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p style="font-size:300%; color: blue;">OIA EU EM</p> <br>
+        <p style="font-size:150%; text-align: center; color: red;">Agora to aqui</p> <br>
+        <p style="font-size:100%; text-align: end; color: green;">Agora aqui :)</p> <br>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="Formatting" id="7">
+      <h1>Formatação</h1>
+      <p>
+        HTML oferece uma variedade de elementos de formatação para dar significado especial ao texto. Aqui estão os
+        principais elementos e suas funções:
+        <br>
+        &lt;b> e &lt;strong>: Usados para texto em negrito, com &lt;strong> dando ênfase adicional.
+        &lt;i> e &lt;em>: Para texto em itálico, com &lt;em> enfatizando o conteúdo.
+        &lt;small>: Define texto em um tamanho menor.
+        &lt;mark>: Destaca ou marca o texto.
+        &lt;del> e &lt;ins>: Para texto excluído e inserido, respectivamente.
+        &lt;sub> e &lt;sup>: Usados para texto subscrito e sobrescrito.
+        Esses elementos ajudam a transmitir significados específicos e destacar partes
+        importantes do texto em uma página HTML.
+      </p>
+
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <pre><p>
+          <b>to em negrito</b>, <strong>sou importante</strong> <br>
+          <i>crosasnt</i> <em>to enfatizado em</em> <br>
+           <mark>me marcarão</mark> <small>soy pequenioo</small> <br>
+           <del>wdjaidwadaw</del> <ins>inserido</ins> <br>
+          <sub>O JOGO</sub> <sup>Perdi</sup>
+        </p></pre>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="Quotations" id="8">
+      <h1></h1>
+    </div>
+
+    <hr>
+
+    <div class="Comments" id="9">
+      <h1>Comments</h1>
+    </div>
+
+    <hr>
+
+    <div class="colors" id="10">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Links" id="11">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Favicon" id="12">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Table" id="13">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="List" id="14">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="BlockLine" id="15">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Div" id="16">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Classes" id="17">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="id" id="18">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Iframes" id="19">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="JavaScript" id="20">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="semantics" id="21">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="StyleGuide" id="22">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Entities" id="23">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Symbols" id="24">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Emojis" id="25">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Charsets" id="26">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="URL" id="27">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="XHTML" id="28">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Forms" id="29">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Formatt" id="30">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Formele" id="31">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="inpTypes" id="32">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="InpAtt" id="33">
+      <h1></h1>
+
+    </div>
+    
+    <hr>
+
+    <div class="inpFormAtt" id="34">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Canvas" id="35">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="SVG" id="36">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Media" id="37">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Video" id="38">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="Audio" id="39">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+    <div class="DragDrop" id="40">
+      <h1></h1>
+
+    </div>
+
+    <hr>
+
+  </div>
+</body>
+
+</html>
