@@ -3,6 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="/imagens/apple-touch-icon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML OVERALL</title>
@@ -10,7 +11,7 @@
 
 <body>
   <!--    TABELA LATERAL   -->
-  <div class="sidenav">
+  <div class="sidebar">
     <h2>Menu</h2>
 
     <a href="#1">Basico</a>
@@ -38,32 +39,31 @@
     <a href="#23">Entidades</a>
     <a href="#24">Simbolos</a>
     <a href="#25">Emojis</a>
-    <a href="#26"></a>
-    <a href="#27"></a>
-    <a href="#28"></a>
+    <a href="#26">Charsets</a>
+    <a href="#27">Codificação de URL</a>
+    <a href="#28">HTML vs XHTML</a>
     <a href="#29">Formulários</a>
     <a href="#30">Atributos do formulário</a>
     <a href="#31">Elementos de formulário</a>
-    <a href="#32"></a>
-    <a href="#33"></a>
-    <a href="#34"></a>
+    <a href="#32">Tipos de entrada</a>
+    <a href="#33">Atributos de entrada</a>
+    <a href="#34">Atributos do formulário de entrada</a>
     <a href="#35">Canvas</a>
     <a href="#36">SVG</a>
     <a href="#37">Media</a>
     <a href="#38">Video</a>
     <a href="#39">Audio</a>
     <a href="#40">Arrastar/soltar</a>
-    
-   
+    <br>
   </div>
 
   <!--  CONTEUDO   -->
-  
+
   <div class="content" id="content">
     <iframe src="" name="content" frameborder="0" width="100%" height="100%"></iframe>
   </div>
-  
-  <div class="container">
+
+  <div class="main" id="main">
     <div class="basic" id="1">
       <h1>Exemplos básicos de HTML</h1>
       <p>Neste capítulo mostraremos alguns exemplos básicos de HTML.
@@ -374,10 +374,12 @@
       </p>
       <div class="exe">
         <h3>Exemplo</h3>
-        &lt;h1 style="color:blue;">This is a heading&lt;/h1> <br>
-        &lt;p style="color:red;">This is a paragraph.&lt;/p> <br>
-        &lt;h1 style="font-family:verdana;">This is a heading&lt;/h1> <br>
-        &lt;p style="font-family:courier;">This is a paragraph.&lt;/p> <br>
+        <p>
+          &lt;h1 style="color:blue;">This is a heading&lt;/h1> <br>
+          &lt;p style="color:red;">This is a paragraph.&lt;/p> <br>
+          &lt;h1 style="font-family:verdana;">This is a heading&lt;/h1> <br>
+          &lt;p style="font-family:courier;">This is a paragraph.&lt;/p> <br>
+        </p>
       </div>
       <h2>Exemplo Prático</h2>
       <div class="box">
@@ -404,6 +406,16 @@
         Esses elementos ajudam a transmitir significados específicos e destacar partes
         importantes do texto em uma página HTML.
       </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;b>b para negrito&lt;/b> <br>
+          &lt;strong>para deixar como importante!&lt;/strong> <br>
+          &lt;i>Esse em italic&lt;/i> <br>
+          &lt;em>Estaria enfatizado&lt;/em> <br>
+          &lt;small>Esse seria um texto pequeno.&lt;/small>
+        </p>
+      </div>
 
       <h2>Exemplo Prático</h2>
       <div class="box">
@@ -420,233 +432,1725 @@
     <hr>
 
     <div class="Quotations" id="8">
-      <h1></h1>
+      <h1>Citações</h1>
+      <p>
+        Este capítulo aborda os elementos HTML relacionados à formatação e citação de texto. O elemento
+        &lt;blockquote> é utilizado para destacar uma seção citada de outra fonte, comumente usado para citações longas,
+        e os
+        navegadores geralmente aplicam um recuo automático a esses elementos. O &lt;q> é empregado para citações curtas,
+        e
+        os navegadores frequentemente inserem aspas ao redor do texto citado. Para abreviaturas e acrônimos, a tag
+        &lt;abbr> é utilizada, fornecendo informações úteis aos navegadores e motores de busca, sendo possível adicionar
+        uma descrição ao passar o mouse sobre o elemento. O &lt;address> é empregado para fornecer informações de
+        contato do autor ou proprietário de um documento ou artigo, geralmente sendo renderizado em itálico e com
+        uma quebra de linha antes e depois do elemento. A tag &lt;cite> é utilizada para definir o título de um
+        trabalho criativo, como um livro ou filme, e geralmente é renderizada em itálico. Por fim, &lt;bdo> é usado
+        para substituir a direção do texto, permitindo a escrita bidirecional, com a direção do texto
+        especificada pelo atributo dir.
+      </p>
+
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;p>A &lt;abbr title="Organização Mundial de Saude">OMS&lt;/abbr> doi dundada em 1948.&lt;/p> <br>
+          &lt;p>o objetivo das lutas do WWE é: &lt;q>não sei prefiro MMA.&lt;/q>&lt;/p> <br>
+          &lt;p>a musica &lt;cite>Like a Stone&lt;/cite> é uma das melhores musicas da banda Audioslave.&lt;/p>
+        </p>
+      </div>
+
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>jogo conhecido como <abbr title="League of Legends">LOL</abbr> é paia.</p>
+        <p>uma vez um sabio disse: <q>cara, ainda bem que eu não sou você.</q></p>
+        <p>A sigla <abbr title="World Health Organization">FAC</abbr> é meu nome só que só as primeiras letras.</p>
+        <p>a musica <cite>Like a Stone</cite> é uma das melhores musicas da banda Audioslave.</p>
+      </div>
     </div>
 
     <hr>
 
     <div class="Comments" id="9">
-      <h1>Comments</h1>
+      <h1>Comentários</h1>
+      <p>
+        Os comentários HTML são utilizados para adicionar notas ou lembretes ao código-fonte HTML sem que sejam exibidos
+        no navegador. Eles são inseridos entre &lt;!-- e --&gt;. Comentários podem ser úteis para documentar o código ou
+        ocultar temporariamente partes do conteúdo. Por exemplo, você pode comentar uma seção do código para explicar
+        sua função ou para desativar temporariamente uma parte do código sem removê-la completamente. Comentários também
+        podem ser usados para ocultar parte do conteúdo dentro de um elemento específico, ajudando na compreensão do
+        código para quem está trabalhando nele.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;!-- titulo --&gt; <br>
+          &lt;h1>A volta dos que não foram.&lt;/h1> <br>
+          &lt;!-- texto --&gt; <br>
+          &lt;p>...? &lt;/p>
+        </p>
+      </div>
+      <h2>Exemplo Prátuico</h2>
+      <div class="box">
+        <p>não vai ter nada aqui pois é um comentario -_-</p>
+        <!--se voce está vendo esse comentario parabéns você é um otimo professor ;)-->
+      </div>
     </div>
 
     <hr>
 
     <div class="colors" id="10">
-      <h1></h1>
-
+      <h1>Cores</h1>
+      <p>
+        As cores em HTML podem ser especificadas de diversas maneiras: por nomes de cores predefinidos, valores RGB,
+        valores HEX, valores HSL, valores RGBA ou valores HSLA.
+        Os nomes de cores predefinidos incluem uma variedade de tons, como "Tomate", "Laranja", "Azul ardósia", entre
+        outros, totalizando 140 nomes de cores padrão.
+        Você pode definir a cor de fundo de elementos HTML usando o atributo style com a propriedade background-color.
+        Por exemplo:
+      </p>
+      <div class="exe">
+        <p>
+          &lt;h1 style="background-color:DodgerBlue;">Hello World&lt;/h1> <br>
+          &lt;p style="background-color:Tomato;">Lorem ipsum...&lt;/p>
+        </p>
+      </div>
+      <p>
+        Para definir a cor do texto, utiliza-se a propriedade color no atributo style:
+      </p>
+      <div class="exe">
+        <p>
+          &lt;h1 style="color:Tomato;">Hello World&lt;/h1> <br>
+          &lt;p style="color:DodgerBlue;">Lorem ipsum...&lt;/p> <br>
+          &lt;p style="color:MediumSeaGreen;">Ut wisi enim...&lt;/p>
+        </p>
+      </div>
+      <p>A cor da borda de elementos pode ser definida com a propriedade border. Por exemplo:</p>
+      <div class="exe">
+        <p>
+          &lt;h1 style="border:2px solid Tomato;">Hello World&lt;/h1> <br>
+          &lt;h1 style="border:2px solid DodgerBlue;">Hello World&lt;/h1> <br>
+          &lt;h1 style="border:2px solid Violet;">Hello World&lt;/h1>
+        </p>
+      </div>
+      <p>Além dos nomes de cores, é possível especificar cores utilizando valores RGB, HEX ou HSL. Por exemplo:</p>
+      <div class="exe">
+        <p>
+          &lt;h1 style="background-color:rgb(255, 99, 71);">...&lt;h1> <br>
+          &lt;h1 style="background-color:#ff6347;">...&lt;/h1> <br>
+          &lt;h1 style="background-color:hsl(9, 100%, 64%);">...v/h1>
+        </p>
+      </div>
+      <p>Também é possível adicionar transparência às cores usando os valores RGBA ou HSLA:</p>
+      <div class="exe">
+        <p>
+          &lt;h1 style="background-color:rgba(255, 99, 71, 0.5);">...&lt;/h1> <br>
+          &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...&lt;/h1>
+        </p>
+      </div>
+      <p style="padding-bottom: 40px;"> Essas diferentes maneiras de especificar cores oferecem flexibilidade para o
+        design e estilização de elementos HTML em uma página da web.</p>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <h1 style="background-color:DodgerBlue;">O JOGO</h1>
+        <p style="background-color:Tomato;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam deleniti
+          illum quam, dolor nulla non corrupti impedit ab dicta explicabo earum consectetur reprehenderit tempora</p>
+        <h1 style="border:2px solid Violet;">Perdi</h1>
+      </div>
     </div>
 
     <hr>
 
     <div class="Links" id="11">
-      <h1></h1>
+      <h1>Links</h1>
+      <p>
+        Os links HTML são essenciais em páginas da web, permitindo a navegação entre diferentes páginas ou recursos
+        online. Eles são criados com &lt;a> e têm a estrutura &lt;a href="url">texto do link&lt;/a>, onde o atributo
+        href indica
+        o destino. O atributo target pode ser usado para determinar onde abrir o link. Links podem ser absolutos
+        (completos) ou relativos (referentes ao próprio site). Imagens podem ser usadas como links com &lt;img> dentro
+        de
+        &lt;a>. Para links de e-mail, use mailto: no href. Botões também podem agir como links com JavaScript. O
+        atributo
+        title fornece informações adicionais. Links absolutos vinculam a páginas externas, enquanto links relativos
+        são para páginas do mesmo site. Esses são os fundamentos dos links em HTML.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;a href="https://www.w3schools.com/">Visit W3Schools.com!&lt;/a> <br>
+          &lt;a href="default.asp"> <br>
+          &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"> <br>
+          &lt;/a> <br>
+        </p>
 
+      </div>
+      <h2>Exemplo prático</h2>
+      <div class="box">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Visite o site da W3Schools.com para aprender mais!</a>
+      </div>
     </div>
 
     <hr>
 
     <div class="Favicon" id="12">
-      <h1></h1>
+      <h1>Favicon</h1>
+      <p>Um favicon é uma pequena imagem exibida ao lado do título da página na guia do navegador.
+        Para adicionar um favicon ao seu site, salve sua imagem de favicon no diretório raiz do seu servidor web ou crie
+        uma pasta no diretório raiz chamada imagens e salve sua imagem de favicon nesta pasta. Um nome comum para uma
+        imagem de favicon é “favicon.ico”.
+        Em seguida, adicione um &lt;link>elemento ao seu arquivo “index.html”, após o &lt;title>elemento, assim:
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;!DOCTYPE html> <br>
+          &lt;html> <br>
+          &lt;head> <br>
+          &lt;title>My Page Title&lt;/title> <br>
+          &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"> <br>
+          &lt;/head> <br>
+          &lt;body> <br>
+
+          &lt;h1>This is a Heading&lt;/h1> <br>
+          &lt;p>This is a paragraph.&lt;/p> <br>
+
+          &lt;/body> <br>
+          &lt;/html>&lt;/p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        Olha a pra la pra cima, ja esta no site
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Table" id="13">
-      <h1></h1>
+      <h1>Tabelas</h1>
+      <p>As tabelas HTML são usadas para organizar dados em linhas e colunas, e são compostas por células de tabela
+        dentro de linhas e colunas. Cada célula é definida por `&lt;td>` e `&lt;/td>`, onde `&lt;td>` significa dados da
+        tabela.
+        Todo conteúdo entre `
+        &lt;td>` e `&lt;/td>` é o conteúdo da célula. Cada linha começa com `&lt;tr>` e termina com `&lt;/tr>`, onde
+        `&lt;tr>`
+        significa linha da tabela. Você pode ter quantas linhas quiser, mas certifique-se de que o número de células
+        seja o mesmo em cada linha. Se desejar que suas células sejam células de cabeçalho, use `&lt;th>` em vez de `
+        &lt;td>`.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;table> <br>
+          &lt;tr> <br>
+          &lt;th>Person 1&lt;/th> <br>
+          &lt;th>Person 2&lt;/th> <br>
+          &lt;th>Person 3&lt;/th> <br>
+          &lt;/tr> <br>
+          &lt;tr> <br>
+          &lt;td>Emil&lt;/td> <br>
+          &lt;td>Tobias&lt;/td> <br>
+          &lt;td>Linus&lt;/td> <br>
+          &lt;/tr> <br>
+          &lt;tr> <br>
+          &lt;td>16&lt;/td> <br>
+          &lt;td>14&lt;/td> <br>
+          &lt;td>10&lt;/td> <br>
+          &lt;/tr> <br>
+          &lt;/table>
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <table class="tabelinha">
+          <tr>
+            <th>Pessoa 1</th>
+            <th>Pessoa 2</th>
+            <th>Pessoa 3</th>
+          </tr>
+          <tr>
+            <td>Jorge</td>
+            <td>Felipe</td>
+            <td>Roberto</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>21</td>
+            <td>35</td>
+          </tr>
+        </table>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="List" id="14">
-      <h1></h1>
+      <h1>Lista</h1>
+      <p>
+
+        As listas HTML são utilizadas para agrupar itens relacionados. Existem três tipos principais:
+
+        Listas não ordenadas: Utilizam a tag
+        &lt;ul> e cada item é marcado com um &lt;li>. Os itens são exibidos com marcadores padrão (pequenos círculos
+        pretos).
+        Listas ordenadas: Usam a tag &lt;ol> com itens marcados por &lt;li>. Os itens são numerados automaticamente.
+        Listas de descrição: Feitas com a tag &lt;dl>, onde &lt;dt> define o termo e
+        &lt;dd> descreve o termo.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;ul> <br>
+          &lt;li>Coffee&lt;/li> <br>
+          &lt;li>Tea&lt;/li> <br>
+          &lt;li>Milk&lt;/li> <br>
+          &lt;/ul>
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>itens para o churras:</p>
+        <ul>
+          <li>carne</li>
+          <li>carvão</li>
+          <li>queijin slc mt brabo</li>
+          <li>cerveja</li>
+          <li>modão (dessa vez eu não choro...)</li>
+        </ul>
+      </div>
+
 
     </div>
 
     <hr>
 
     <div class="BlockLine" id="15">
-      <h1></h1>
-
+      <h1>Block & line</h1>
+      <p>
+        Elementos HTML são classificados em dois tipos principais de exibição: bloco e embutido. <br>
+        <br>
+        **Elementos de nível de bloco**: Estes elementos começam sempre em uma nova linha, ocupam toda a largura
+        disponível e incluem uma margem automática. Exemplos comuns incluem `&lt;p&gt;` e `&lt;div&gt;`, ambos usados
+        para definir áreas específicas como parágrafos e seções dentro de um documento HTML. <br>
+        <br>
+        **Elementos embutidos**: Eles não começam em uma nova linha e ocupam apenas a largura necessária para o
+        conteúdo. Um exemplo é o `&lt;span&gt;`, um contêiner embutido usado para estilizar ou destacar partes do texto
+        sem afetar a estrutura do documento.
+        <br>
+        <br>
+        O `&lt;div&gt;` é amplamente usado para organizar outros elementos HTML e facilitar a estilização com CSS,
+        enquanto o `&lt;span&gt;` é ideal para aplicar estilos a segmentos específicos de texto, também com o auxílio de
+        CSS. Ambos os elementos são versáteis devido à ausência de atributos obrigatórios, mas frequentemente usam
+        atributos como `style`, `class`, e `id` para personalização.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;p>Hello World&lt;/p> <br>
+          &lt;div>Hello World&lt;/div>
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          Já está sendo usado no site
+        </p>
+      </div>
     </div>
 
     <hr>
 
     <div class="Div" id="16">
-      <h1></h1>
+      <h1>Divisão</h1>
+      <p>
+        O `
+        &lt;div>` no HTML é um contêiner genérico usado para agrupar e organizar seções de conteúdo e outros elementos
+        dentro
+        de um documento. Não tem significado semântico próprio, mas é fundamental na construção de layouts de páginas
+        web, especialmente quando usado com CSS para aplicar estilos. Ele permite aos desenvolvedores criar layouts
+        complexos e organizar o HTML de maneira clara, facilitando a manutenção e compreensão do código, especialmente
+        em projetos grandes. O `&lt;div>` também é útil para aplicar estilos específicos e para manipulação via
+        JavaScript,
+        tornando-o uma ferramenta versátil na web moderna.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;div&gt; <br>
+          &lt;h2&gt;London&lt;/h2&gt; <br>
+          &lt;p&gt;London is the capital city of England.&lt;/p&gt; <br>
+          &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt; <br>
+          &lt;/div&gt; <br>
 
+          &lt;div&gt; <br>
+          &lt;h2&gt;Oslo&lt;/h2&gt; <br>
+          &lt;p&gt;Oslo is the capital city of Norway.&lt;/p&gt; <br>
+          &lt;p&gt;Oslo has over 600.000 inhabitants.&lt;/p&gt; <br>
+          &lt;/div&gt; <br>
+
+          &lt;div&gt; <br>
+          &lt;h2&gt;Rome&lt;/h2&gt; <br>
+          &lt;p&gt;Rome is the capital city of Italy.&lt;/p&gt; <br>
+          &lt;p&gt;Rome has almost 3 million inhabitants.&lt;/p&gt; <br>
+          &lt;/div&gt; <br>
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          Já está sendo usado no site
+        </p>
+      </div>
     </div>
 
     <hr>
 
     <div class="Classes" id="17">
-      <h1></h1>
+      <h1>Classe</h1>
+      <p>
+        As classes no HTML são atributos que podem ser adicionados a elementos para agrupá-los e estilizá-los de maneira
+        semelhante. Elas permitem aplicar estilos CSS específicos a vários elementos com a mesma classe, tornando a
+        estilização mais eficiente e consistente. Classes também são usadas para aplicar efeitos interativos e
+        comportamentais usando JavaScript, permitindo alterar dinamicamente a aparência ou comportamento de elementos em
+        resposta a ações do usuário. Em resumo, as classes são uma maneira eficiente e flexível de estilizar e interagir
+        com o conteúdo da página HTML.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;h2 class="city main">London&lt;/h2>
+          &lt;h2 class="city">Paris&lt;/h2>
+          &lt;h2 class="city">Tokyo&lt;/h2>
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          Já está sendo usado no site
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="id" id="18">
-      <h1></h1>
+      <h1>Id</h1>
+      <p>
+        No HTML, o atributo "id" é usado para identificar exclusivamente um elemento específico em uma página. Ele
+        permite selecionar e manipular esse elemento por meio de estilos CSS e scripts JavaScript. Cada elemento pode
+        ter apenas um ID, e ele deve ser único dentro do documento HTML. Comparado ao atributo "class", que pode ser
+        aplicado a vários elementos, o "id" é usado para identificar singularmente um elemento.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          ```html <br>
+          &lt;style&gt; <br>
+          /* Estiliza o elemento com o id "myHeader" */ <br>
+          #myHeader { <br>
+          background-color: lightblue; <br>
+          color: black; <br>
+          padding: 40px; <br>
+          text-align: center; <br>
+          } <br>
+
+          /* Estiliza todos os elementos com a classe "city" */ <br>
+          .city { <br>
+          background-color: tomato; <br>
+          color: white; <br>
+          padding: 10px; <br>
+          } <br>
+          &lt;/style&gt; <br>
+          <br>
+          &lt;!-- Um elemento com um id único --&gt; <br>
+          &lt;h1 id="myHeader"&gt;My Cities&lt;/h1&gt; <br>
+          <br>
+          &lt;!-- Múltiplos elementos com a mesma classe --&gt; <br>
+          &lt;h2 class="city"&gt;London&lt;/h2&gt; <br>
+          &lt;p&gt;London is the capital of England.&lt;/p&gt; <br>
+          <br>
+          &lt;h2 class="city"&gt;Paris&lt;/h2&gt; <br>
+          &lt;p&gt;Paris is the capital of France.&lt;/p&gt; <br>
+          <br>
+          &lt;h2 class="city"&gt;Tokyo&lt;/h2&gt; <br>
+          &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt; <br>
+          ```
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          já está sendo usado no site
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Iframes" id="19">
-      <h1></h1>
+      <h1>Iframes</h1>
+      <p>
+        A tag `&lt;iframe>` do HTML permite incorporar uma página da web dentro de outra página, exibindo o conteúdo de
+        uma
+        URL específica em uma área designada. Isso é útil para integrar conteúdo de terceiros, como vídeos do YouTube
+        ou mapas do Google Maps, em um site. O atributo `src` especifica a URL da página a ser carregada, enquanto
+        outros atributos como `width`, `height` e `allowfullscreen` podem ser usados para personalizar o `&lt;iframe>`.
+        Embora seja conveniente, o uso de `&lt;iframe>` pode apresentar desafios de segurança e deve ser usado com
+        cautela.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;iframe src="url" title="description">&lt;/iframe>
+          &lt;iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example">&lt;/iframe>
+
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          <iframe src="https://felipeacandido.vercel.app" frameborder="0" width="100%" height="100%"></iframe>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="JavaScript" id="20">
-      <h1></h1>
+      <h1>JavaScript</h1>
+      <p>
+        JavaScript é uma linguagem de programação que torna as páginas HTML mais dinâmicas e interativas. A tag HTML
+        `&lt;script>` é usada para incluir scripts do lado do cliente, seja inserindo diretamente as instruções de
+        script ou apontando para um arquivo de script externo. O JavaScript é comumente usado para manipular imagens,
+        validar formulários e alterar dinamicamente o conteúdo de uma página. Para selecionar elementos HTML, o
+        JavaScript utiliza o método `document.getElementById()`. A tag HTML `&lt;noscript&gt;` é usada para fornecer
+        conteúdo alternativo aos usuários que têm scripts desativados em seus navegadores ou que estão usando
+        navegadores que não suportam scripts.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;button type="button" <br>
+          onclick="document.getElementById('demo').innerHTML = Date()"> <br>
+          Quer saber a data e a hora?&lt;/button> <br>
+          <br>
+          &lt;p id="demo">&lt;/p>
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Quer saber a data e a hora?</button>
+
+        <p id="demo"></p>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="semantics" id="21">
-      <h1></h1>
+      <h1>Semântica</h1>
+      <p>
+
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="StyleGuide" id="22">
-      <h1></h1>
+      <h1>Guia Style</h1>
+      <p>
+
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Entities" id="23">
-      <h1></h1>
+      <h1>Entidades</h1>
+      <p>
+        As entidades do HTML são códigos especiais utilizados para representar caracteres especiais e símbolos que, de
+        outra forma, teriam significados especiais no HTML. Elas são utilizadas para garantir que esses caracteres sejam
+        exibidos corretamente nos navegadores, sem interferir na interpretação do código HTML.
+
+        Alguns exemplos comuns de entidades HTML incluem:
+
+        1. `&lt;` para `&lt;` (menor que) 2. `&gt;` para `>` (maior que)
+        3. `&amp;` para `&` (e comercial)
+        4. `&quot;` para `"` (aspas duplas)
+        5. `&apos;` ou `&#39;` para `'` (aspas simples)
+        6. `&nbsp;` para espaço em branco não quebrável
+
+        Essas entidades são frequentemente usadas em situações em que os caracteres especiais podem interferir na
+        interpretação do HTML, como dentro de texto, atributos de tags e scripts embutidos. Ao usar entidades HTML, os
+        desenvolvedores podem garantir que o conteúdo seja renderizado corretamente em diferentes navegadores e
+        ambientes.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <div>
+          <table class="tabe">
+            <tr>
+              <th>Result</th>
+              <th>Description</th>
+              <th>Name</th>
+              <th>Number</th>
+            </tr>
+            <tr>
+              <td>non-breaking space</td>
+              <td>&nbsp;</td>
+              <td>&amp;nbsp;</td>
+              <td>&amp;#160;</td>
+            </tr>
+            <tr>
+              <td>&lt;</td>
+              <td>less than</td>
+              <td>&amp;lt;</td>
+              <td>&amp;#60;</td>
+            </tr>
+            <tr>
+              <td>&gt;</td>
+              <td>greater than</td>
+              <td>&amp;gt;</td>
+              <td>&amp;#62;</td>
+            </tr>
+            <tr>
+              <td>&amp;</td>
+              <td>ampersand</td>
+              <td>&amp;amp;</td>
+              <td>&amp;#38;</td>
+            </tr>
+            <tr>
+              <td>"</td>
+              <td>double quotation mark</td>
+              <td>&amp;quot;</td>
+              <td>&amp;#34;</td>
+            </tr>
+            <tr>
+              <td>'</td>
+              <td>single quotation mark</td>
+              <td>&amp;apos;</td>
+              <td>&amp;#39;</td>
+            </tr>
+            <tr>
+              <td>¢</td>
+              <td>cent</td>
+              <td>&amp;cent;</td>
+              <td>&amp;#162;</td>
+            </tr>
+            <tr>
+              <td>£</td>
+              <td>pound</td>
+              <td>&amp;pound;</td>
+              <td>&amp;#163;</td>
+            </tr>
+            <tr>
+              <td>¥</td>
+              <td>yen</td>
+              <td>&amp;yen;</td>
+              <td>&amp;#165;</td>
+            </tr>
+            <tr>
+              <td>€</td>
+              <td>euro</td>
+              <td>&amp;euro;</td>
+              <td>&amp;#8364;</td>
+            </tr>
+            <tr>
+              <td>©</td>
+              <td>copyright</td>
+              <td>&amp;copy;</td>
+              <td>&amp;#169;</td>
+            </tr>
+            <tr>
+              <td>®</td>
+              <td>trademark</td>
+              <td>&amp;reg;</td>
+              <td>&amp;#174;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          Já está sendo usado no site
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Symbols" id="24">
-      <h1></h1>
+      <h1>Simbolos</h1>
+      <p>
+        Símbolos ou letras que não estão presentes no teclado podem ser adicionados ao HTML usando entidades.
+        As entidades HTML foram descritas no capítulo anterior.
+
+        Muitos símbolos matemáticos, técnicos e monetários não estão presentes em um teclado normal.
+
+        Para adicionar esses símbolos a uma página HTML, você pode usar o nome da entidade ou o número da entidade (uma
+        referência decimal ou hexadecimal) para o símbolo
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <div>
+          <table class="tabe">
+            <tr>
+              <th>Char</th>
+              <th>Number</th>
+              <th>Entity</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>∀</td>
+              <td>&amp;#8704;</td>
+              <td>&amp;forall;</td>
+              <td>For all</td>
+            </tr>
+            <tr>
+              <td>∂</td>
+              <td>&amp;#8706;</td>
+              <td>&amp;part;</td>
+              <td>Partial differential</td>
+            </tr>
+            <tr>
+              <td>∃</td>
+              <td>&amp;#8707;</td>
+              <td>&amp;exist;</td>
+              <td>There exists</td>
+            </tr>
+            <tr>
+              <td>∅</td>
+              <td>&amp;#8709;</td>
+              <td>&amp;empty;</td>
+              <td>Empty sets</td>
+            </tr>
+            <tr>
+              <td>∇</td>
+              <td>&amp;#8711;</td>
+              <td>&amp;nabla;</td>
+              <td>Nabla</td>
+            </tr>
+            <tr>
+              <td>∈</td>
+              <td>&amp;#8712;</td>
+              <td>&amp;isin;</td>
+              <td>Element of</td>
+            </tr>
+            <tr>
+              <td>∉</td>
+              <td>&amp;#8713;</td>
+              <td>&amp;notin;</td>
+              <td>Not an element of</td>
+            </tr>
+            <tr>
+              <td>∋</td>
+              <td>&amp;#8715;</td>
+              <td>&amp;ni;</td>
+              <td>Contains as member</td>
+            </tr>
+            <tr>
+              <td>∏</td>
+              <td>&amp;#8719;</td>
+              <td>&amp;prod;</td>
+              <td>N-ary product</td>
+            </tr>
+            <tr>
+              <td>∑</td>
+              <td>&amp;#8721;</td>
+              <td>&amp;sum;</td>
+              <td>N-ary summation</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          Usado na tabela acima
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Emojis" id="25">
-      <h1></h1>
-
+      <h1>Emojis</h1>
+      <p>
+        Emojis são caracteres do conjunto de caracteres UTF-8:😄 😍 💗
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <div>
+          <table class="tabe">
+            <tr>
+              <th>Caractere</th>
+              <th>Decimal</th>
+              <th>Feitiço</th>
+              <th>Nome</th>
+            </tr>
+            <tr>
+              <td>😀</td>
+              <td>128512</td>
+              <td>1F600</td>
+              <td>Cara sorrindo</td>
+            </tr>
+            <tr>
+              <td>😁</td>
+              <td>128513</td>
+              <td>1F601</td>
+              <td>Rosto sorrindo com olhos sorrindo</td>
+            </tr>
+            <tr>
+              <td>😂</td>
+              <td>128514</td>
+              <td>1F602</td>
+              <td>Cara com lágrimas de alegria</td>
+            </tr>
+            <tr>
+              <td>😃</td>
+              <td>128515</td>
+              <td>1F603</td>
+              <td>Cara sorrindo com boca aberta</td>
+            </tr>
+            <tr>
+              <td>😄</td>
+              <td>128516</td>
+              <td>1F604</td>
+              <td>Rosto sorrindo com boca aberta e olhos sorrindo</td>
+            </tr>
+            <tr>
+              <td>😅</td>
+              <td>128517</td>
+              <td>1F605</td>
+              <td>Cara sorrindo com boca aberta e suor frio</td>
+            </tr>
+            <tr>
+              <td>😆</td>
+              <td>128518</td>
+              <td>1F606</td>
+              <td>Rosto sorrindo com boca aberta e olhos bem fechados</td>
+            </tr>
+            <tr>
+              <td>😇</td>
+              <td>128519</td>
+              <td>1F607</td>
+              <td>Cara sorrindo com halo</td>
+            </tr>
+            <tr>
+              <td>😈</td>
+              <td>128520</td>
+              <td>1F608</td>
+              <td>Cara sorrindo com chifres</td>
+            </tr>
+            <tr>
+              <td>😉</td>
+              <td>128521</td>
+              <td>1F609</td>
+              <td>Cara piscando</td>
+            </tr>
+            <tr>
+              <td>😊</td>
+              <td>128522</td>
+              <td>1F60A</td>
+              <td>Rosto sorrindo com olhos sorrindo</td>
+            </tr>
+            <tr>
+              <td>😋</td>
+              <td>128523</td>
+              <td>1F60B</td>
+              <td>Rosto saboreando comida deliciosa</td>
+            </tr>
+            <tr>
+              <td>😌</td>
+              <td>128524</td>
+              <td>1F60C</td>
+              <td>Rosto aliviado</td>
+            </tr>
+            <tr>
+              <td>😍</td>
+              <td>128525</td>
+              <td>1F60D</td>
+              <td>Rosto sorrindo com olhos em forma de coração</td>
+            </tr>
+            <tr>
+              <td>😎</td>
+              <td>128526</td>
+              <td>1F60E</td>
+              <td>Cara sorrindo com óculos de sol</td>
+            </tr>
+            <tr>
+              <td>😏</td>
+              <td>128527</td>
+              <td>1F60F</td>
+              <td>Cara sorrindo</td>
+            </tr>
+            <tr>
+              <td>😐</td>
+              <td>128528</td>
+              <td>1F610</td>
+              <td>Rosto neutro</td>
+            </tr>
+            <tr>
+              <td>😑</td>
+              <td>128529</td>
+              <td>1F611</td>
+              <td>Rosto sem expressão</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p style="font-size: 30px;">
+          &#x1F609 &#x1F446
+        </p>
+      </div>
     </div>
 
     <hr>
 
     <div class="Charsets" id="26">
-      <h1></h1>
+      <h1>Charset</h1>
+      <p>
+        "Charset", ou conjunto de caracteres, é uma configuração utilizada para definir o conjunto de caracteres que um
+        documento HTML deve usar. Isso é importante para garantir que os caracteres especiais e acentos sejam exibidos
+        corretamente no navegador.
+
+        O atributo charset é definido dentro da tag
+        &lt;meta> no cabeçalho do documento HTML e especifica o conjunto de caracteres utilizado. Por exemplo, o
+        conjunto
+        de caracteres UTF-8 é amplamente utilizado e suporta uma ampla gama de caracteres internacionais.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;!DOCTYPE html> <br>
+          &lt;html lang="en"> <br>
+          &lt;head> <br>
+          &lt;title>Document&lt;/title> <br>
+          &lt;/head> <br>
+          &lt;body> <br>
+          &lt;!-- Conteúdo da página --&gt; <br>
+          &lt;/body> <br>
+          &lt;/html> <br>
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          Já está sendo usado na pagina
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="URL" id="27">
-      <h1></h1>
+      <h1>Codificação de URL</h1>
+      <p>
+        A codificação de URL no HTML refere-se ao processo de transformar caracteres especiais e outros caracteres não
+        permitidos em URLs em uma forma que possa ser transmitida e interpretada corretamente pelos navegadores da web.
+        Isso é necessário porque certos caracteres, como espaços, acentos e símbolos especiais, não podem ser usados
+        diretamente em uma URL.
+        <br>
+        A codificação de URL é realizada substituindo cada caractere não permitido por sua representação em hexadecimal,
+        precedida por um sinal de porcentagem (%). Por exemplo, um espaço é substituído por "%20".
+        <br>
+        Este processo de codificação é comumente utilizado em links e parâmetros de consulta em URLs para garantir que
+        elas sejam interpretadas corretamente pelos navegadores e servidores web. Por exemplo, ao enviar dados de um
+        formulário através de uma solicitação GET, os valores dos campos são codificados para garantir que caracteres
+        especiais, como espaços ou símbolos, sejam transmitidos corretamente.
+        <br>
+        Em HTML, a codificação de URL também é aplicada automaticamente em certos elementos, como atributos href em
+        links e valores de atributos src em elementos de mídia, quando os desenvolvedores utilizam caracteres especiais
+        ou URLs contendo espaços ou símbolos. Isso garante que os URLs sejam interpretados corretamente pelos
+        navegadores e servidores web.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;!DOCTYPE html&gt; <br>
+          &lt;html lang="en"&gt; <br>
+          &lt;head&gt; <br>
+          &lt;meta charset="UTF-8"&gt; <br>
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+          &lt;title&gt;Exemplos de Codificação de URL em HTML&lt;/title&gt; <br>
+          &lt;/head&gt; <br>
+          &lt;body&gt; <br>
+          <br>
+          &lt;!-- Exemplo 1: Link com espaço no URL --&gt; <br>
+          &lt;a href="https://www.example.com/search?q=termo%20de%20busca"&gt;Link com espaço no URL&lt;/a&gt; <br>
+          <br>
+          &lt;br&gt;&lt;br&gt; <br>
+          <br>
+          &lt;!-- Exemplo 2: Imagem com espaço no nome do arquivo --&gt; <br>
+          &lt;img src="https://www.example.com/imagem%20com%20espaço.jpg" alt="Imagem com espaço"&gt; <br>
+          <br>
+          &lt;br&gt;&lt;br&gt; <br>
+          <br>
+          &lt;!-- Exemplo 3: Formulário com campo de entrada contendo espaço --&gt; <br>
+          &lt;form action="https://www.example.com/processar-dados"&gt; <br>
+          &lt;input type="text" name="nome" value="Jo%C3%A3o%20da%20Silva"&gt; <br>
+          &lt;input type="submit" value="Enviar"&gt; <br>
+          &lt;/form&gt; <br>
+          <br>
+          &lt;/body&gt; <br>
+          &lt;/html&gt; <br>
 
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          Já está sendo usado no site
+        </p>
+      </div>
     </div>
 
     <hr>
 
     <div class="XHTML" id="28">
-      <h1></h1>
+      <h1>HTML vs XHTML</h1>
+      <p>
+        XHTML, ou Extensible Hypertext Markup Language, é uma linguagem de marcação que segue as regras do XML
+        (eXtensible Markup Language). Ela é uma versão mais rigorosa e estruturada do HTML, projetada para ser mais
+        compatível com XML e mais precisa em relação à sintaxe.
+        <br> <br>
+        Principais características do XHTML:
+        <br> <br>
+        1. **Compatibilidade com XML:** O XHTML segue as regras do XML, o que significa que ele é mais estruturado e
+        compatível com outras tecnologias baseadas em XML, como XSLT (Extensible Stylesheet Language Transformations) e
+        XML Schema.
+        <br> <br>
+        aninhados corretamente. Isso torna o código XHTML mais previsível e fácil de entender para os navegadores e
+        outros analisadores XML.
+        <br> <br>
+        3. **Separação de conteúdo e apresentação:** Assim como o HTML, o XHTML permite separar o conteúdo do documento
+        da sua apresentação, usando folhas de estilo em cascata (CSS) para estilizar o conteúdo.
+        <br> <br>
+        4. **Suporte a namespaces:** O XHTML suporta namespaces XML, permitindo a inclusão de elementos e atributos de
+        outras linguagens de marcação XML em documentos XHTML.
+        <br> <br>
+        5. **Compatibilidade com HTML:** O XHTML é compatível com as versões anteriores do HTML, o que significa que os
+        documentos XHTML podem ser processados e exibidos por navegadores da web que suportam HTML.
+        <br> <br>
+        6. **Mais estruturação:** O XHTML promove uma estruturação mais clara e semântica do conteúdo da web, o que
+        facilita a acessibilidade, a indexação por motores de busca e a manutenção do código.
+        <br> <br>
+        No entanto, o XHTML também é mais restrito do que o HTML em alguns aspectos, o que significa que pode ser mais
+        difícil para os iniciantes. Por exemplo, todas as tags devem ser em letras minúsculas, todos os atributos devem
+        ser citados e todos os elementos devem ser corretamente aninhados e fechados.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+                    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+            &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+          &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;en&quot; lang=&quot;en&quot;&gt;
+          &lt;head&gt;
+            &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+            &lt;title&gt;Exemplos de XHTML&lt;/title&gt;
+            &lt;style type=&quot;text/css&quot;&gt;
+              body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+              }
+              h1 {
+                color: #333333;
+              }
+              p {
+                font-size: 14px;
+              }
+            &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+            &lt;p&gt;Este é um exemplo de documento XHTML.&lt;/p&gt;
+            
+            &lt;img src=&quot;imagem.jpg&quot; alt=&quot;Imagem&quot; /&gt;
+            &lt;a href=&quot;https://www.example.com&quot; title=&quot;Link para exemplo&quot;&gt;Exemplo de Link&lt;/a&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          Não tenho certeza c consigo implementar o XHTML em cima do HTML já existente
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Forms" id="29">
-      <h1></h1>
+      <h1>Formas</h1>
+      <p>
+        Formulários HTML são elementos cruciais para coletar informações dos usuários em páginas da web. Eles incluem
+        campos de entrada como &lt;input&gt;, &lt;textarea&gt;, e &lt;select&gt;, além de botões de envio como &lt;input
+        type="submit"&gt;. O elemento &lt;form&gt; envolve os campos de entrada e define como os dados serão enviados ao
+        servidor, através dos atributos method e action. A validação de dados pode ser realizada com novos tipos de
+        entrada HTML5, como email, url, e number, e atributos como required e pattern. Os elementos &lt;label&gt;,
+        &lt;fieldset&gt;, e &lt;legend&gt; ajudam a melhorar a acessibilidade e organização do formulário. Em resumo,
+        formulários HTML são fundamentais para interações dinâmicas e coleta de dados na web.
+
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+                    &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;title&gt;Exemplo de Formulário&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+
+          &lt;h2&gt;Formulário de Contato&lt;/h2&gt;
+
+          &lt;form action="/submit_form.php" method="post"&gt;
+              &lt;label for="nome"&gt;Nome:&lt;/label&gt;&lt;br&gt;
+              &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;
+              
+              &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+              &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+              
+              &lt;label for="mensagem"&gt;Mensagem:&lt;/label&gt;&lt;br&gt;
+              &lt;textarea id="mensagem" name="mensagem" rows="4" cols="50"&gt;&lt;/textarea&gt;&lt;br&gt;
+              
+              &lt;input type="submit" value="Enviar"&gt;
+          &lt;/form&gt;
+
+          &lt;/body&gt;
+          &lt;/html&gt;
+
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+        <form>
+          <label for="fname">Seu nome:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Sobrenome:</label><br>
+          <input type="text" id="lname" name="lname">
+        </form>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Formatt" id="30">
-      <h1></h1>
+      <h1>Atributos do formulário</h1>
+      <p>
+        Os atributos do formulário em HTML fornecem controle sobre o comportamento e o processamento dos dados enviados
+        por meio do formulário. Eles incluem atributos como "action" para especificar o URL de destino, "method" para
+        definir o método de envio de dados, "name" para identificar o formulário em scripts, "target" para determinar
+        onde exibir a resposta, "enctype" para a codificação de caracteres e "autocomplete" para controlar o
+        preenchimento automático. Cada atributo tem um papel específico na personalização e na funcionalidade do
+        formulário.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+          &lt;!-- Exemplo de formulário com action e method --&gt;
+          &lt;form action="/submit_form.php" method="post">
+              &lt;label for="username">Usuário:&lt;/label>
+              &lt;input type="text" id="username" name="username">
+              &lt;br>
+              &lt;label for="password">Senha:&lt;/label>
+              &lt;input type="password" id="password" name="password">
+              &lt;br>
+              &lt;input type="submit" value="Enviar">
+          &lt;/form>
+          
+          &lt;!-- Exemplo de formulário com target --&gt;
+          &lt;form action="/submit_form.php" method="post" target="_blank">
+              &lt;label for="email">Email:&lt;/label>
+              &lt;input type="email" id="email" name="email">
+              &lt;br>
+              &lt;input type="submit" value="Enviar">
+          &lt;/form>
+          
+          &lt;!-- Exemplo de formulário com enctype --&gt;
+          &lt;form action="/upload_file.php" method="post" enctype="multipart/form-data">
+              &lt;label for="file">Selecione um arquivo:&lt;/label>
+              &lt;input type="file" id="file" name="file">
+              &lt;br>
+              &lt;input type="submit" value="Enviar">
+          &lt;/form>
+          
+          &lt;!-- Exemplo de formulário com autocomplete --&gt;
+          &lt;form action="/submit_form.php" method="post" autocomplete="off">
+              &lt;label for="city">Cidade:&lt;/label>
+              &lt;input type="text" id="city" name="city">
+              &lt;br>
+              &lt;input type="submit" value="Enviar">
+          &lt;/form>
+          
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          <!-- Exemplo de formulário com action e method -->
+        <form action="/submit_form.php" method="post">
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" name="username">
+          <br>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password">
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+
+        <!-- Exemplo de formulário com target -->
+        <form action="/submit_form.php" method="post" target="_blank">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+
+        <!-- Exemplo de formulário com enctype -->
+        <form action="/upload_file.php" method="post" enctype="multipart/form-data">
+          <label for="file">Selecione um arquivo:</label>
+          <input type="file" id="file" name="file">
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+
+        <!-- Exemplo de formulário com autocomplete -->
+        <form action="/submit_form.php" method="post" autocomplete="off">
+          <label for="city">Cidade:</label>
+          <input type="text" id="city" name="city">
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Formele" id="31">
-      <h1></h1>
+      <h1>Elementos de formulário</h1>
+      <p>
+        Elementos de formulário em HTML são usados para criar interações e coletar dados dos usuários. Os principais
+        elementos incluem `&lt;input>`, `&lt;label>`, `&lt;select>`, `&lt;textarea>`, `&lt;button>`, `&lt;checkbox>` e
+        `&lt;radio>`. Eles permitem aos usuários inserir texto, selecionar opções, enviar arquivos e interagir com a
+        página da web. Esses elementos são essenciais para criar formulários interativos e funcionais.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+          &lt;!-- Input de texto --&gt;
+&lt;label for="username"&gt;Usuário:&lt;/label&gt;
+&lt;input type="text" id="username" name="username"&gt;
+
+&lt;!-- Input de senha --&gt;
+&lt;label for="password"&gt;Senha:&lt;/label&gt;
+&lt;input type="password" id="password" name="password"&gt;
+
+&lt;!-- Select (lista de opções) --&gt;
+&lt;label for="car"&gt;Escolha um carro:&lt;/label&gt;
+&lt;select id="car" name="car"&gt;
+  &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+  &lt;option value="saab"&gt;Saab&lt;/option&gt;
+  &lt;option value="fiat"&gt;Fiat&lt;/option&gt;
+  &lt;option value="audi"&gt;Audi&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;!-- Textarea (área de texto) --&gt;
+&lt;label for="message"&gt;Mensagem:&lt;/label&gt;
+&lt;textarea id="message" name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
+
+&lt;!-- Botão --&gt;
+&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
+&lt;label for="vehicle1"&gt; Tenho uma bicicleta&lt;/label&gt;&lt;br&gt;
+&lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car"&gt;
+&lt;label for="vehicle2"&gt; Tenho um carro&lt;/label&gt;&lt;br&gt;
+
+&lt;!-- Radio button --&gt;
+&lt;input type="radio" id="male" name="gender" value="male"&gt;
+&lt;label for="male"&gt;Masculino&lt;/label&gt;&lt;br&gt;
+&lt;input type="radio" id="female" name="gender" value="female"&gt;
+&lt;label for="female"&gt;Feminino&lt;/label&gt;&lt;br&gt;
+
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          <!-- Input de texto -->
+          <label for="username">Usuário:</label>
+          <input type="text" id="username" name="username">
+
+          <!-- Input de senha -->
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password">
+
+          <!-- Select (lista de opções) -->
+          <label for="car">Escolha um carro:</label>
+          <select id="car" name="car">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+          </select>
+
+          <!-- Textarea (área de texto) -->
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+          <!-- Botão -->
+          <button type="submit">Enviar</button>
+
+          <!-- Checkbox -->
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> Tenho uma bicicleta</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> Tenho um carro</label><br>
+
+          <!-- Radio button -->
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Masculino</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Feminino</label><br>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="inpTypes" id="32">
-      <h1></h1>
+      <h1>Tipos de entrada</h1>
+      <p>
+        Esses são apenas alguns dos tipos de entrada disponíveis em HTML. Cada um tem suas próprias características e é
+        usado de acordo com as necessidades específicas de um formulário.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+          &lt;input type="button">
+          &lt;input type="checkbox">
+          &lt;input type="color">
+          &lt;input type="date">
+          &lt;input type="datetime-local">
+          &lt;input type="email">
+          &lt;input type="file">
+          &lt;input type="hidden">
+          &lt;input type="image">
+          &lt;input type="month">
+          &lt;input type="number">
+          &lt;input type="password">
+          &lt;input type="radio">
+          &lt;input type="range">
+          &lt;input type="reset">
+          &lt;input type="search">
+          &lt;input type="submit">
+          &lt;input type="tel">
+          &lt;input type="text">
+          &lt;input type="time">
+          &lt;input type="url">
+          &lt;input type="week">
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          <input type="button"> <br>
+          <input type="checkbox"> <br>
+          <input type="color"> <br>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="InpAtt" id="33">
-      <h1></h1>
+      <h1>Atributos de entrada</h1>
+      <p>
+        Os atributos de entrada em HTML são usados para configurar e personalizar elementos de entrada em formulários.
+        Eles incluem id, name, value, placeholder, required, readonly, disabled e maxlength, entre outros. Esses
+        atributos permitem definir identificadores únicos, nomes de campos, valores iniciais, textos de dica, requisitos
+        de preenchimento, modo somente leitura, desativação e limites de caracteres para os campos de entrada.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;input type="text" id="username" name="username" placeholder="Digite seu nome de usuário"> <br>
+          &lt;input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário"> <br>
+          <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+
+        </p>
+      </div>
 
     </div>
-    
+
     <hr>
 
     <div class="inpFormAtt" id="34">
-      <h1></h1>
+      <h1>Atributos do formulário de entrada</h1>
+      <p>
+        Os atributos de formulário de entrada do HTML são usados para controlar e personalizar o comportamento dos
+        elementos de entrada em formulários da web. Eles incluem atributos como "type" para especificar o tipo de
+        entrada, "name" para identificar os dados enviados ao servidor, "id" para identificação única, "value" para
+        definir valores iniciais, "placeholder" para fornecer dicas de entrada, "required" para tornar campos
+        obrigatórios, entre outros. Esses atributos são essenciais para criar formulários interativos e funcionais.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+                    &lt;!DOCTYPE html&gt;
+          &lt;html lang="en"&gt;
+          &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;title&gt;Exemplo de Formulário&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+              &lt;h2&gt;Cadastro de Usuário&lt;/h2&gt;
+              &lt;form action="/submit_form.php" method="post"&gt;
+                  &lt;label for="username"&gt;Nome de Usuário:&lt;/label&gt;
+                  &lt;input type="text" id="username" name="username" required&gt;
+                  &lt;br&gt;
+                  &lt;label for="email"&gt;Email:&lt;/label&gt;
+                  &lt;input type="email" id="email" name="email" placeholder="Digite seu email" required&gt;
+                  &lt;br&gt;
+                  &lt;label for="password"&gt;Senha:&lt;/label&gt;
+                  &lt;input type="password" id="password" name="password" minlength="8" required&gt;
+                  &lt;br&gt;
+                  &lt;label for="birthdate"&gt;Data de Nascimento:&lt;/label&gt;
+                  &lt;input type="date" id="birthdate" name="birthdate" max="2004-01-01" required&gt;
+                  &lt;br&gt;
+                  &lt;label for="avatar"&gt;Avatar:&lt;/label&gt;
+                  &lt;input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required&gt;
+                  &lt;br&gt;
+                  &lt;input type="submit" value="Enviar"&gt;
+              &lt;/form&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+        <h2>Cadastro de Usuário</h2>
+        <form action="/submit_form.php" method="post">
+          <label for="username">Nome de Usuário:</label>
+          <input type="text" id="username" name="username" required>
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+          <br>
+          <label for="password">Senha:</label>
+          <input type="password" id="password" name="password" minlength="8" required>
+          <br>
+          <label for="birthdate">Data de Nascimento:</label>
+          <input type="date" id="birthdate" name="birthdate" max="2004-01-01" required>
+          <br>
+          <label for="avatar">Avatar:</label>
+          <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required>
+          <br>
+          <input type="submit" value="Enviar">
+        </form>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Canvas" id="35">
-      <h1></h1>
+      <h1>Canvas</h1>
+      <p>
+        O elemento &lt;canvas> do HTML oferece uma área de desenho onde é possível criar gráficos, imagens e elementos
+        visuais usando JavaScript. Ele possui uma API de desenho que permite manipular pixels, linhas, formas
+        geométricas e texto. O canvas é ideal para criar gráficos interativos, animações e jogos, oferecendo alta
+        performance e compatibilidade com os principais navegadores. É altamente personalizável e suporta uma
+        variedade de técnicas de desenho, como gradientes, sombras e transformações. Exemplo de uso inclui desenhar
+        formas, imagens e texto dentro do canvas, proporcionando uma experiência interativa aos usuários.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+          &lt;canvas id="myCanvas" width="200" height="200" style="border:1px solid black;"&gt;&lt;/canvas&gt;
+          &lt;script&gt;
+              // Obtém o elemento canvas
+              var canvas = document.getElementById("myCanvas");
+              // Obtém o contexto de renderização 2D
+              var ctx = canvas.getContext("2d");
+              // Define o centro do círculo
+              var centerX = canvas.width / 2;
+              var centerY = canvas.height / 2;
+              // Define o raio do círculo
+              var radius = 50;
+              // Inicia o desenho do círculo
+              ctx.beginPath();
+              // Desenha o círculo
+              ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+              // Define a cor de preenchimento do círculo
+              ctx.fillStyle = "red";
+              // Preenche o círculo com a cor especificada
+              ctx.fill();
+              // Fecha o desenho do círculo
+              ctx.closePath();
+          &lt;/script&gt;
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          nn sei faze isso, eu desisto
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="SVG" id="36">
-      <h1></h1>
+      <h1>SVG</h1>
+      <p>
+        SVG (Scalable Vector Graphics) é uma linguagem baseada em XML para criar gráficos vetoriais bidimensionais. Ele
+        permite criar gráficos escaláveis e interativos na web, sendo escalável e baseado em vetores. Com suporte para
+        formas básicas, texto, interatividade, filtros e efeitos visuais, o SVG é amplamente utilizado para criar
+        gráficos de dados, ícones, logotipos e visualizações complexas na web. É integrado ao HTML usando a tag
+        `&lt;svg>`.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+          &lt;svg width="200" height="200"&gt;
+          &lt;circle cx="100" cy="100" r="50" fill="red" /&gt;
+          &lt;rect x="50" y="50" width="100" height="100" fill="blue" /&gt;
+          &lt;line x1="0" y1="0" x2="200" y2="200" stroke="black" /&gt;
+          &lt;text x="20" y="180" font-family="Arial" font-size="16" fill="green"&gt;SVG Example&lt;/text&gt;
+          &lt;/svg&gt;
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <!--eu amo o criador do chatgpt-->
+        <p>
+          <svg width="200" height="200">
+            <circle cx="100" cy="100" r="50" fill="red" />
+            <rect x="50" y="50" width="100" height="100" fill="blue" />
+            <line x1="0" y1="0" x2="200" y2="200" stroke="black" />
+            <text x="20" y="180" font-family="Arial" font-size="16" fill="green">SVG Example</text>
+          </svg>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Media" id="37">
-      <h1></h1>
+      <h1>Media</h1>
+      <p>
+        A multimídia no HTML permite incorporar e reproduzir conteúdo de áudio, vídeo e imagens em páginas da web. Isso
+        é feito principalmente por meio das tags `&lt;audio>`, `&lt;video>` e `&lt;img>`, além do elemento
+        `&lt;iframe>`. Os
+        atributos de controle como `controls`, `autoplay` e `loop` fornecem funcionalidades de reprodução e
+        interatividade. É importante considerar os formatos de mídia suportados pelos navegadores, a
+        compatibilidade e a acessibilidade ao incorporar multimídia em páginas da web.
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+          &lt;!DOCTYPE html>
+          &lt;html lang="en">
+          &lt;head>
+          &lt;meta charset="UTF-8">
+          &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+          &lt;title>Multimídia no HTML&lt;/title>
+          &lt;/head>
+          &lt;body>
+
+          &lt;audio controls&gt;
+            &lt;source src="audio/sample.mp3" type="audio/mp3"&gt;
+            Seu navegador não suporta o elemento de áudio.
+          &lt;/audio&gt;
+
+          &lt;video width="320" height="240" controls&gt;
+            &lt;source src="video/sample.mp4" type="video/mp4"&gt;
+            Seu navegador não suporta o elemento de vídeo.
+          &lt;/video&gt;
+
+          &lt;img src="image/sample.jpg" alt="Imagem de exemplo"&gt;
+
+          &lt;/body>
+          &lt;/html>
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p style="jus: center;">
+          eu depois de ficar o dia inteiro fazendo esse site &#128128;<br>
+          <video width="640" height="360" controls>
+            <source src="/videos/videoplayback.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
+        </p>
+      </div>
 
     </div>
 
     <hr>
 
     <div class="Video" id="38">
-      <h1></h1>
+      <h1>Video</h1>
+      <p>
 
+        A tag &lt;video> em HTML permite incorporar vídeos diretamente em páginas da web. Você pode especificar várias
+        fontes de vídeo e fornecer controles de reprodução aos usuários. É importante garantir a compatibilidade do
+        navegador e a responsividade do vídeo. Aqui está um exemplo básico de código:
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <pre>
+          &lt;video width="640" height="360" controls> 
+            &lt;source src="video/exemplo.mp4" type="video/mp4">
+           
+          &lt;/video>
+        </pre>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          literaly me <br>
+          <video width="640" height="360" controls>
+            <source src="/videos/videoplayback (1).mp4" type="video/mp4">
+          </video>
+        </p>
+      </div>
     </div>
 
     <hr>
 
     <div class="Audio" id="39">
-      <h1></h1>
+      <h1>Audio</h1>
+      <p>
+        A tag &lt;audio> em HTML permite incorporar arquivos de áudio diretamente em páginas da web. Assim como com a
+        tag
+        &lt;video>, você pode especificar várias fontes de áudio para garantir a compatibilidade do navegador. Aqui está
+        um exemplo básico de código:
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+          &lt;audio controls>
+          &lt;source src="audio/exemplo.mp3" type="audio/mpeg">
+          &lt;/audio>
+        </p>
 
+      </div>
+      <p>Neste exemplo, o atributo controls adiciona controles de reprodução padrão, como play, pause e volume. O
+        elemento
+        &lt;source> permite especificar diferentes formatos de arquivo de áudio para compatibilidade com diferentes
+        navegadores.
+      </p>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+          <audio controls>
+            <source src="/Audio/goofy-ahh-sounds.mp3" type="audio/mpeg">
+          </audio>
+        </p>
+      </div>
     </div>
 
     <hr>
 
     <div class="DragDrop" id="40">
-      <h1></h1>
+      <h1>Arrastar/soltar</h1>
+      <p>
+        O recurso de arrastar e soltar (drag and drop) em HTML permite que os usuários interajam com elementos da página
+        movendo-os de um local para outro usando o mouse. É uma funcionalidade poderosa que pode ser implementada usando
+        eventos JavaScript. Aqui está um resumo básico: <br>
+
+        Eventos Drag and Drop: Os principais eventos são dragstart, drag, dragenter, dragleave, dragover e drop.
+        Elementos Principais: O elemento que pode ser arrastado deve ter o atributo draggable definido como true. O
+        atributo ondragstart é usado para lidar com o início do evento de arrastar.
+        Área de Destino: A área onde os elementos podem ser soltos deve ter manipuladores de eventos para dragover e
+        drop.
+        Implementação Básica:
+      </p>
+      <div class="exe">
+        <h3>Exemplo</h3>
+        <p>
+
+        </p>
+      </div>
+      <h2>Exemplo Prático</h2>
+      <div class="box">
+        <p>
+
+        </p>
+      </div>
 
     </div>
 
-    <hr>
+    <div class="tent" id="tent">
+      <iframe src="" name="tent" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
 
   </div>
 </body>
